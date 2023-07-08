@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form Validation and Storage</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="text-center my-3">JavaScript Form Validations and Storage</h1>
+
+    <div class="container">
+      <form id="register" class="container-fluid w-75">
+        <fieldset class="my-3 fs-4 fw-bold">Registration</fieldset>
+
+        <!--
+          Validation required:
+          1. All fields are mandatory
+          2. Email must be in the correct format
+          3. Password should be:
+             3.a. At least 8 characters, and must contain;
+             3.b. 1 lowercase
+             3.c. 1 uppercase
+             3.d. 1 number, and;
+             3.e. 1 special character
+          4. Confirm Password must be the same as the Password
+         -->
+
+        <div class="formField">
+          <label for="firstname"
+            >First Name: <span class="text-danger">*</span></label
+          >
+
+          <br /><small></small>
+
+          <input
+            id="firstname"
+            type="text"
+            name="firstname"
+            class="frmFirstName form-control" />
+        </div>
+
+        <div class="formField">
+          <label for="lastname"
+            >Last Name: <span class="text-danger">*</span></label
+          >
+
+          <br /><small></small>
+
+          <input
+            id="lastname"
+            type="text"
+            name="lastname"
+            class="frmLastName form-control" />
+        </div>
+
+        <div class="formField">
+          <label for="email">Email: <span class="text-danger">*</span></label>
+
+          <br /><small></small>
+
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="frmEmail form-control" />
+        </div>
+
+        <div class="formField">
+          <label for="password"
+            >Password: <span class="text-danger">*</span></label
+          >
+
+          <br /><small></small>
+
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="frmPassword form-control" />
+        </div>
+
+        <div class="formField">
+          <label for="confirmPassword"
+            >Confirm Password: <span class="text-danger">*</span></label
+          >
+
+          <br /><small></small>
+
+          <input
+            id="confirmPassword"
+            type="password"
+            name="confirmPassword"
+            class="frmConfirmPassword form-control" />
+        </div>
+
+        <button id="signup" type="submit" class="btn btn-primary w-100 mt-3">
+          Sign Up
+        </button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

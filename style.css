@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .formField {
+    margin-bottom: 15px;
+  }
+  
+  .error small {
+    color: red;
+  }
+  
